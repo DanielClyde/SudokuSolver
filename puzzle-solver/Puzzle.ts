@@ -4,9 +4,9 @@ import { Row, Column, Box, PuzzleRegion } from './PuzzleRegion.ts'
 export class Puzzle {
   private validSymbols: Set<string> = new Set();
   private cells: Cell[] = [];
-  private rows: {[index: number]: Row} = {};
-  private columns: {[index: number]: Column} = {};
-  private boxes: {[index: number]: Box} = {};
+  private rows: { [index: number]: Row } = {};
+  private columns: { [index: number]: Column } = {};
+  private boxes: { [index: number]: Box } = {};
 
   readonly boxSize: number;
 
@@ -19,6 +19,11 @@ export class Puzzle {
     for (const cell of cells) {
       this.addCell(cell);
     }
+    this.initializePossibleValues();
+  }
+
+  isSolved() {
+    return !this.findEmptyCell();
   }
 
   findEmptyCell(): Cell | undefined {
@@ -57,6 +62,24 @@ export class Puzzle {
     return this.cells;
   }
 
+  isValidPlacement(cell: Cell, symbol: string): boolean {
+    return !this.symbolInRow(cell, symbol) &&
+      !this.symbolInColumn(cell, symbol) &&
+      !this.symbolInBox(cell, symbol);
+  }
+
+  private initializePossibleValues() {
+    for (const cell of this.cells) {
+      if (cell.isEmpty) {
+        for (const symbol of this.validSymbols) {
+          if (this.isValidPlacement(cell, symbol)) {
+            cell.possibleValues.add(symbol);
+          }
+        }
+      }
+    }
+  }
+
   private initializeRegions() {
     for (let i = 0; i < this.size; i++) {
       this.rows[i] = new Row(this.size);
@@ -71,6 +94,20 @@ export class Puzzle {
     this.boxes[Box.GetBoxIndex(cell, this.boxSize)].addCell(cell);
     this.cells.push(cell);
   }
+
+  private symbolInRow(cell: Cell, symbol: string): boolean {
+    return this.getRowRegion(cell).contains(symbol);
+  }
+
+  private symbolInColumn(cell: Cell, symbol: string): boolean {
+    return this.getColumnRegion(cell).contains(symbol);
+  }
+
+  private symbolInBox(cell: Cell, symbol: string): boolean {
+    return this.getBoxRegion(cell).contains(symbol);
+  }
+
+
 
   print() {
     console.log(`${this.size}x${this.size} puzzle`);
