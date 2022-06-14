@@ -19,7 +19,7 @@ export class Puzzle {
     for (const cell of cells) {
       this.addCell(cell);
     }
-    this.initializePossibleValues();
+    this.calculatePossibleValues();
   }
 
   isSolved() {
@@ -68,7 +68,7 @@ export class Puzzle {
       !this.symbolInBox(cell, symbol);
   }
 
-  private initializePossibleValues() {
+  calculatePossibleValues() {
     for (const cell of this.cells) {
       if (cell.isEmpty) {
         for (const symbol of this.validSymbols) {
@@ -107,7 +107,10 @@ export class Puzzle {
     return this.getBoxRegion(cell).contains(symbol);
   }
 
-
+  clone(): Puzzle {
+    const p = new Puzzle(this.size, [...this.cells].map(c => new Cell(c.row, c.col, c.symbol)), [...this.validSymbols]);
+    return p;
+  }
 
   print() {
     console.log(`${this.size}x${this.size} puzzle`);
