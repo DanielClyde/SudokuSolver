@@ -34,8 +34,29 @@ export class PuzzleSolver {
     if (!this.currentPuzzle) {
       throw new Error('Please set puzzle before attempting to solve');
     }
+    this.findSolutions();
+    const res = this.getSolutionResult();
+    this.checkSolutionsValid(res);
+    return res;
+  }
+
+  private getSolutionResult(): SolutionResult {
+    return {
+      stats: this.cellSolutionStrategies.map(s => s.getStats()),
+      solution: this.solutions[0],
+    };
+  }
+
+  private checkSolutionsValid(res: SolutionResult) {
+    if (this.solutions.length > 1) {
+      res.error = `Invalid puzzle has ${this.solutions.length} solutions`;
+    } else if (!this.solutions.length) {
+      res.error = `No solutions found`;
+    }
+  }
+
+  private findSolutions() {
     while (this.currentPuzzle && !this.currentPuzzle?.isSolved() && this.canBacktrack) {
-      // await new Promise<void>(resolve => setTimeout(() => resolve(), 1000));
       let updated = false;
       for (const strategy of this.cellSolutionStrategies) {
         const { changeMade, cell } = strategy.execute(this.currentPuzzle);
@@ -54,16 +75,6 @@ export class PuzzleSolver {
         }
       }
     }
-    const res: SolutionResult = {
-      stats: this.cellSolutionStrategies.map(s => s.getStats()),
-      solution: this.solutions[0],
-    }
-    if (this.solutions.length > 1) {
-      res.error = `Invalid puzzle has ${this.solutions.length} solutions`;
-    } else if (!this.solutions.length) {
-      res.error = `No solutions found`;
-    }
-    return res;
   }
 
   private saveToStack(cell: Cell) {
