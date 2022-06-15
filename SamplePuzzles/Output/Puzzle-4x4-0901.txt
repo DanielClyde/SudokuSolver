@@ -1,4 +1,2 @@
-4
-1 2 3 4
-4 9 - 1
-Bad Puzzle
+
+Cell 0x1 has invalid symbol: 9

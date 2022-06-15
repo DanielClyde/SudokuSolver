@@ -1,18 +1,27 @@
 import { PuzzleFileHelper } from './utils/PuzzleFileHelper.ts';
-import { PuzzleSolver } from './puzzle-solver/PuzzleSolver.ts';
+import { PuzzleSolver, SolutionResult } from './puzzle-solver/PuzzleSolver.ts';
+import { Puzzle } from './puzzle-solver/Puzzle.ts';
 
 const puzzleFileHelper = new PuzzleFileHelper();
 
-const puzzle = await puzzleFileHelper.readPuzzleFromFile(`SamplePuzzles/Input/Puzzle-4x4-0904.txt`);
-puzzle.print();
-const solver = new PuzzleSolver();
-solver.setPuzzle(puzzle);
-const res = solver.solve();
-if (res.error) {
-  console.log('FAIL');
-  console.log(res.error);
-} else {
-  console.log('SOLVED');
-  res.solution.print();
-  console.log(res.stats);
+for await (const file of Deno.readDir('SamplePuzzles/Input')) {
+  let puzzle: Puzzle;
+  let res: SolutionResult = { };
+  console.log('solving', file.name);
+  try {
+    puzzle = await puzzleFileHelper.readPuzzleFromFile(`SamplePuzzles/Input/${file.name}`);
+  } catch (e) {
+    res = {
+      error: e.message,
+    };
+    await puzzleFileHelper.writePuzzleSolutionToFile(`SamplePuzzles/Output/${file.name}`, res);
+    continue;
+  }
+  if (!res.error) {
+    const solver = new PuzzleSolver();
+    solver.setPuzzle(puzzle);
+    res = solver.solve();
+    console.log(!!res.error);
+    await puzzleFileHelper.writePuzzleSolutionToFile(`SamplePuzzles/Output/${file.name}`, res);
+  }
 }

@@ -17,7 +17,6 @@ export class CrooksStrategy extends CellSolutionStrategy {
     const symbol = this.getSymbolGuess(puzzle, cell);
     if (symbol && puzzle.isValidPlacement(cell, symbol)) {
       cell.symbol = symbol;
-      puzzle.print();
       return true;
     } else {
       return false;

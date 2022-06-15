@@ -1,12 +1,17 @@
 import { Puzzle } from './Puzzle.ts';
 import { Cell } from './Cell.ts';
+import { PuzzleValidator } from '../validators/PuzzleValidator.ts';
+import { CellValidator } from '../validators/PuzzleCellValidator.ts';
 import { SizeValidator } from '../validators/PuzzleSizeValidator.ts';
 
 const SIZE_INDEX = 0;
 const VALID_SYMBOLS_INDEX = 1;
 
 export class PuzzleFactory {
-  private validator = new SizeValidator();
+  private validators: PuzzleValidator[] = [
+    new SizeValidator(),
+    new CellValidator(),
+  ];
 
   puzzleFromText(text: string): Puzzle {
     const textRows = text.split('\r\n');
@@ -15,7 +20,9 @@ export class PuzzleFactory {
     textRows.splice(0, 2);
     const cells = this.getCellsFromRows(textRows);
     const puzzle = new Puzzle(size, cells, validSymbols);
-    this.validator.validate({ puzzle });
+    for (const validator of this.validators) {
+      validator.validate({ puzzle });
+    }
     return puzzle;
   }
 

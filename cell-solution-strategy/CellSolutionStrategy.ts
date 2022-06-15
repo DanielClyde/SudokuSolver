@@ -33,12 +33,10 @@ export abstract class CellSolutionStrategy {
   protected abstract applyChanges(puzzle: Puzzle, cells: Cell): boolean;
 
   private startTimer() {
-    console.log(this.constructor.name, 'STARTING');
     this._startedTime = performance.now();
   }
 
   private stopTimer() {
-    console.log(this.constructor.name, 'STOPPING');
     this._elapsedTime += (performance.now() - this._startedTime);
   }
 }

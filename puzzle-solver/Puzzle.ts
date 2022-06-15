@@ -109,15 +109,25 @@ export class Puzzle {
     return p;
   }
 
-  print() {
-    console.log(`${this.size}x${this.size} puzzle`);
-    console.log('valid symbols:', this.validSymbols);
+  toString(): string {
+    let res = `${this.size}x${this.size} puzzle\n`;
+    res += `Valid symbols: `;
+    for (const s of this.validSymbols) {
+      res += `${s} `;
+    }
+    res += '\n';
     for (let i = 0; i < this.size; i++) {
       let rowString = '';
       for (const cell of this.rows[i].iterator()) {
-        rowString += (cell.isEmpty ? '-' : cell.symbol) + '\t';
+        rowString += (cell?.isEmpty ? '-' : cell?.symbol) + '\t';
       }
-      console.log(rowString);
+      rowString += '\n';
+      res += rowString;
     }
+    return res;
+  }
+
+  print() {
+    console.log(this.toString());
   }
 }

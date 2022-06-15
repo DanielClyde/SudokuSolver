@@ -1,4 +1,2 @@
-4
-1 2 3 4
-4
-Bad Puzzle
+
+Each row in a 4x4 puzzle must have exactly 4 columns

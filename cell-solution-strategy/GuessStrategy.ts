@@ -11,7 +11,6 @@ export class GuessStrategy extends CellSolutionStrategy {
     for (const symbol of cell.possibleValues) {
       if (puzzle.isValidPlacement(cell, symbol)) {
         cell.symbol = symbol;
-        puzzle.print();
         return true;
       }
     }
