@@ -1,15 +1,2 @@
-4x4 puzzle
-Valid symbols: A B C D 
-B	D	C	A	
-A	C	B	D	
-C	A	D	B	
-D	B	A	C	
 
-Strategy: GuessStrategy
-Time Elapsed: 0
-Used Count: 4
-
-Strategy: CrooksStrategy
-Time Elapsed: 0
-Used Count: 0
-
+No solutions found
