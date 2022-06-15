@@ -7,10 +7,10 @@ export class SizeValidator implements PuzzleValidator {
       throw new Error('Puzzle size must be a perfect square');
     }
     for (let i = 0; i < size; i++) {
-      if (params.puzzle.getRowRegion(i).size !== size) {
+      if (params.puzzle.getRowRegion(i).currentSize !== size) {
         throw new Error(`Each row in a ${size}x${size} puzzle must have exactly ${size} columns`);
       }
-      if (params.puzzle.getColumnRegion(i).size !== size) {
+      if (params.puzzle.getColumnRegion(i).currentSize !== size) {
         throw new Error(`Each column in a ${size}x${size} puzzle must have exactly ${size} rows`);
       }
     }

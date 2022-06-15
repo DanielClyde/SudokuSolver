@@ -1,6 +1,6 @@
 import { Puzzle } from './Puzzle.ts';
 import { Cell } from './Cell.ts';
-import { SizeValidator } from './Validators/PuzzleSizeValidator.ts';
+import { SizeValidator } from '../validators/PuzzleSizeValidator.ts';
 
 const SIZE_INDEX = 0;
 const VALID_SYMBOLS_INDEX = 1;

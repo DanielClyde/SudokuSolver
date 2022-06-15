@@ -8,10 +8,7 @@ export class Puzzle {
   private columns: { [index: number]: Column } = {};
   private boxes: { [index: number]: Box } = {};
 
-  readonly boxSize: number;
-
-  constructor(readonly size: number, cells: Cell[], validSymbols: Iterable<string>) {
-    this.boxSize = Math.sqrt(size);
+  constructor(readonly size: number, cells: Cell[], validSymbols: string[]) {
     this.initializeRegions();
     for (const symbol of validSymbols) {
       this.validSymbols.add(symbol);
@@ -30,7 +27,7 @@ export class Puzzle {
     return this.cells.find(c => c.isEmpty);
   }
 
-  getValidSymbols(): Iterable<string> {
+  getValidSymbols(): Set<string> {
     return this.validSymbols;
   }
 
@@ -52,7 +49,7 @@ export class Puzzle {
 
   getBoxRegion(cell: Cell | number): PuzzleRegion {
     if (cell instanceof Cell) {
-      return this.boxes[Box.GetBoxIndex(cell, this.boxSize)];
+      return this.boxes[Box.GetBoxIndex(cell, this.size)];
     } else {
       return this.boxes[cell];
     }
@@ -91,7 +88,7 @@ export class Puzzle {
   private addCell(cell: Cell) {
     this.rows[cell.row].addCell(cell);
     this.columns[cell.col].addCell(cell);
-    this.boxes[Box.GetBoxIndex(cell, this.boxSize)].addCell(cell);
+    this.boxes[Box.GetBoxIndex(cell, this.size)].addCell(cell);
     this.cells.push(cell);
   }
 

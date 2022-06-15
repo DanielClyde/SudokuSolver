@@ -2,7 +2,7 @@ import { Cell } from './Cell.ts';
 
 export abstract class PuzzleRegion {
   protected cells: { [index: number]: Cell } = {};
-  get size() { return Object.keys(this.cells).length; }
+  get currentSize() { return Object.keys(this.cells).length; }
 
   constructor(protected maxSize: number) { }
 
@@ -18,7 +18,8 @@ export abstract class PuzzleRegion {
 
   public * iterator() {
     for (let i = 0; i < this.maxSize; i++) {
-      yield this.cells[i];
+      const cell = this.cells[i];
+      yield cell;
     }
   }
 }
@@ -37,13 +38,16 @@ export class Column extends PuzzleRegion {
 
 export class Box extends PuzzleRegion {
 
-  static GetBoxIndex(cell: Cell, boxWidth: number) {
+  static GetBoxIndex(cell: Cell, gridWidth: number) {
+    const boxWidth = Math.ceil(Math.sqrt(gridWidth));
     const col = Math.floor(cell.col / boxWidth);
     const row = Math.floor(cell.row / boxWidth);
-    return col + (row * boxWidth);
+    const ret = col + (row * boxWidth);
+    return ret;
   }
 
   addCell(cell: Cell) {
-    this.cells[Box.GetBoxIndex(cell, Math.sqrt(this.size))] = cell;
+    const index = this.currentSize;
+    this.cells[index] = cell;
   }
 }

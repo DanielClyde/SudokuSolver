@@ -1,7 +1,8 @@
-import { Puzzle } from '../Puzzle.ts';
+import { Puzzle } from '../puzzle-solver/Puzzle.ts';
 
 export interface ValidationParams {
   puzzle: Puzzle;
+  solutions?: Puzzle[];
 }
 
 export interface PuzzleValidator {
