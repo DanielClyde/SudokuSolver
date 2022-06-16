@@ -1,0 +1,144 @@
+{
+  "scriptId": "92",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/puzzle-solver/Puzzle.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 13560, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 95, "endOffset": 3401, "count": 9 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "Puzzle",
+      "ranges": [
+        { "startOffset": 219, "endOffset": 541, "count": 9 },
+        { "startOffset": 363, "endOffset": 417, "count": 36 },
+        { "startOffset": 452, "endOffset": 495, "count": 136 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "isSolved",
+      "ranges": [{ "startOffset": 546, "endOffset": 602, "count": 68 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "findEmptyCell",
+      "ranges": [{ "startOffset": 607, "endOffset": 678, "count": 107 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 656, "endOffset": 670, "count": 992 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getValidSymbols",
+      "ranges": [{ "startOffset": 683, "endOffset": 742, "count": 36 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getRowRegion",
+      "ranges": [
+        { "startOffset": 747, "endOffset": 920, "count": 276 },
+        { "startOffset": 802, "endOffset": 853, "count": 255 },
+        { "startOffset": 853, "endOffset": 914, "count": 21 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getColumnRegion",
+      "ranges": [
+        { "startOffset": 925, "endOffset": 1107, "count": 184 },
+        { "startOffset": 983, "endOffset": 1037, "count": 163 },
+        { "startOffset": 1037, "endOffset": 1101, "count": 21 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getBoxRegion",
+      "ranges": [
+        { "startOffset": 1112, "endOffset": 1311, "count": 189 },
+        { "startOffset": 1243, "endOffset": 1305, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getAllCells",
+      "ranges": [{ "startOffset": 1316, "endOffset": 1364, "count": 108 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "isValidPlacement",
+      "ranges": [
+        { "startOffset": 1369, "endOffset": 1552, "count": 255 },
+        { "startOffset": 1449, "endOffset": 1498, "count": 163 },
+        { "startOffset": 1499, "endOffset": 1545, "count": 129 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "calculatePossibleValues",
+      "ranges": [
+        { "startOffset": 1557, "endOffset": 1905, "count": 9 },
+        { "startOffset": 1624, "endOffset": 1899, "count": 136 },
+        { "startOffset": 1656, "endOffset": 1889, "count": 38 },
+        { "startOffset": 1714, "endOffset": 1875, "count": 152 },
+        { "startOffset": 1777, "endOffset": 1857, "count": 65 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "initializeRegions",
+      "ranges": [
+        { "startOffset": 1910, "endOffset": 2141, "count": 9 },
+        { "startOffset": 1976, "endOffset": 2135, "count": 36 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "addCell",
+      "ranges": [{ "startOffset": 2146, "endOffset": 2355, "count": 136 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "symbolInRow",
+      "ranges": [{ "startOffset": 2360, "endOffset": 2450, "count": 255 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "symbolInColumn",
+      "ranges": [{ "startOffset": 2455, "endOffset": 2551, "count": 163 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "symbolInBox",
+      "ranges": [{ "startOffset": 2556, "endOffset": 2646, "count": 129 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "clone",
+      "ranges": [{ "startOffset": 2651, "endOffset": 2809, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 2721, "endOffset": 2758, "count": 48 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "toString",
+      "ranges": [{ "startOffset": 2814, "endOffset": 3341, "count": 0 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "print",
+      "ranges": [{ "startOffset": 3346, "endOffset": 3399, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

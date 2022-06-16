@@ -5,11 +5,15 @@ Valid symbols: 1 2 3 4
 3	1	4	2	
 4	2	1	3	
 
+Strategy: TwinsStrategy
+Time Elapsed: 10
+Used Count: 1134
+
 Strategy: BacktrackingStrategy
 Time Elapsed: 0
-Used Count: 17
+Used Count: 1135
 
 Strategy: CrooksStrategy
-Time Elapsed: 0
-Used Count: 7
+Time Elapsed: 2
+Used Count: 609
 

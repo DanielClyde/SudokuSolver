@@ -1,0 +1,71 @@
+{
+  "scriptId": "82",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/puzzle-solver/PuzzleRegion.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 4948, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 7, "endOffset": 514, "count": 108 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "get currentSize",
+      "ranges": [{ "startOffset": 61, "endOffset": 121, "count": 178 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "PuzzleRegion",
+      "ranges": [{ "startOffset": 126, "endOffset": 186, "count": 108 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getCell",
+      "ranges": [{ "startOffset": 191, "endOffset": 247, "count": 0 }],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "contains",
+      "ranges": [{ "startOffset": 252, "endOffset": 365, "count": 547 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 322, "endOffset": 352, "count": 1986 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "iterator",
+      "ranges": [
+        { "startOffset": 370, "endOffset": 512, "count": 32 },
+        { "startOffset": 431, "endOffset": 506, "count": 123 },
+        { "startOffset": 496, "endOffset": 506, "count": 91 },
+        { "startOffset": 506, "endOffset": 511, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "addCell",
+      "ranges": [{ "startOffset": 559, "endOffset": 617, "count": 136 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "addCell",
+      "ranges": [{ "startOffset": 667, "endOffset": 725, "count": 136 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "GetBoxIndex",
+      "ranges": [{ "startOffset": 779, "endOffset": 1043, "count": 422 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "addCell",
+      "ranges": [{ "startOffset": 1048, "endOffset": 1143, "count": 136 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

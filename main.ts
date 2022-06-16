@@ -9,6 +9,10 @@ if (Deno.args.length) {
   for (const fileName of Deno.args) {
     await solvePuzzle(fileName);
   }
+} else {
+  for await (const file of Deno.readDir('SamplePuzzles/Input')) {
+    await solvePuzzle(file.name);
+  }
 }
 
 

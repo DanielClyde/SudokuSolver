@@ -5,11 +5,15 @@ A	C	B	D
 C	A	D	B	
 D	B	A	C	
 
+Strategy: TwinsStrategy
+Time Elapsed: 10
+Used Count: 1641
+
 Strategy: BacktrackingStrategy
 Time Elapsed: 0
-Used Count: 4
+Used Count: 1637
 
 Strategy: CrooksStrategy
-Time Elapsed: 0
-Used Count: 0
+Time Elapsed: 2
+Used Count: 870
 

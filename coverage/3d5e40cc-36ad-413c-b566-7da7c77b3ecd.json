@@ -1,0 +1,50 @@
+{
+  "scriptId": "95",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/cell-solution-strategy/CellSolutionStrategy.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 4203, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 7, "endOffset": 880, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "get numUses",
+      "ranges": [{ "startOffset": 40, "endOffset": 79, "count": 9 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "get elapsedTime",
+      "ranges": [{ "startOffset": 84, "endOffset": 131, "count": 9 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getStats",
+      "ranges": [{ "startOffset": 198, "endOffset": 361, "count": 9 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "execute",
+      "ranges": [
+        { "startOffset": 366, "endOffset": 712, "count": 94 },
+        { "startOffset": 513, "endOffset": 632, "count": 86 },
+        { "startOffset": 697, "endOffset": 703, "count": 86 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "startTimer",
+      "ranges": [{ "startOffset": 717, "endOffset": 784, "count": 94 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "stopTimer",
+      "ranges": [{ "startOffset": 789, "endOffset": 878, "count": 94 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

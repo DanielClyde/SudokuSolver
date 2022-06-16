@@ -1,0 +1,11 @@
+{
+  "scriptId": "28",
+  "url": "deno:ext/web/15_performance.js",
+  "functions": [
+    {
+      "functionName": "now",
+      "ranges": [{ "startOffset": 15271, "endOffset": 15360, "count": 188 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

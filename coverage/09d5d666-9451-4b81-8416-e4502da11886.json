@@ -1,0 +1,25 @@
+{
+  "scriptId": "93",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/validators/PuzzleCellValidator.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 2673, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "validate",
+      "ranges": [
+        { "startOffset": 33, "endOffset": 664, "count": 5 },
+        { "startOffset": 109, "endOffset": 658, "count": 66 },
+        { "startOffset": 140, "endOffset": 648, "count": 36 },
+        { "startOffset": 288, "endOffset": 406, "count": 1 },
+        { "startOffset": 406, "endOffset": 474, "count": 35 },
+        { "startOffset": 474, "endOffset": 596, "count": 0 },
+        { "startOffset": 596, "endOffset": 648, "count": 35 },
+        { "startOffset": 658, "endOffset": 663, "count": 4 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

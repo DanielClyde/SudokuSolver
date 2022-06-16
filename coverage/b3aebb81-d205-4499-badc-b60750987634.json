@@ -1,0 +1,36 @@
+{
+  "scriptId": "79",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/tests/solve.spec.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 5808, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 224, "endOffset": 1641, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "run",
+      "ranges": [{ "startOffset": 328, "endOffset": 1639, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 412, "endOffset": 760, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 843, "endOffset": 1191, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 1283, "endOffset": 1631, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

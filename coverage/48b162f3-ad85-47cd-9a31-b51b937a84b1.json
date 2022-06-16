@@ -1,0 +1,37 @@
+{
+  "scriptId": "78",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/tests/validation.spec.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 3669, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 158, "endOffset": 1074, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "run",
+      "ranges": [{ "startOffset": 233, "endOffset": 1072, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 311, "endOffset": 658, "count": 1 },
+        { "startOffset": 464, "endOffset": 526, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 739, "endOffset": 1064, "count": 1 },
+        { "startOffset": 892, "endOffset": 954, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

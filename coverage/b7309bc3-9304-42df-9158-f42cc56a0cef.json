@@ -1,0 +1,57 @@
+{
+  "scriptId": "88",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/puzzle-solver/PuzzleFactory.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 5470, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 272, "endOffset": 1351, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "puzzleFromText",
+      "ranges": [
+        { "startOffset": 382, "endOffset": 853, "count": 6 },
+        { "startOffset": 769, "endOffset": 824, "count": 11 },
+        { "startOffset": 824, "endOffset": 852, "count": 4 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getSizeFromRows",
+      "ranges": [{ "startOffset": 858, "endOffset": 921, "count": 6 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getValidSymbolsFromRows",
+      "ranges": [{ "startOffset": 926, "endOffset": 1016, "count": 6 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getCellsFromRows",
+      "ranges": [{ "startOffset": 1021, "endOffset": 1349, "count": 6 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 1093, "endOffset": 1319, "count": 28 },
+        { "startOffset": 1135, "endOffset": 1309, "count": 22 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 1176, "endOffset": 1293, "count": 88 },
+        { "startOffset": 1259, "endOffset": 1265, "count": 38 },
+        { "startOffset": 1266, "endOffset": 1272, "count": 50 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

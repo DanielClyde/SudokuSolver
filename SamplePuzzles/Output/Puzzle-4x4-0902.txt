@@ -6,14 +6,14 @@ Valid symbols: 1 2 3 4
 2	4	1	3	
 
 Strategy: TwinsStrategy
-Time Elapsed: 2
-Used Count: 32
+Time Elapsed: 6
+Used Count: 484
 
 Strategy: BacktrackingStrategy
 Time Elapsed: 0
-Used Count: 31
+Used Count: 493
 
 Strategy: CrooksStrategy
-Time Elapsed: 0
-Used Count: 15
+Time Elapsed: 2
+Used Count: 255
 

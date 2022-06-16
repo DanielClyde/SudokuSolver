@@ -1,0 +1,11 @@
+{
+  "scriptId": "76",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/tests/main.spec.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1496, "count": 1 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

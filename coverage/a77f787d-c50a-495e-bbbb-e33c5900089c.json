@@ -1,0 +1,81 @@
+{
+  "scriptId": "84",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/puzzle-solver/PuzzleSolver.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 9972, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 251, "endOffset": 2673, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "setPuzzle",
+      "ranges": [{ "startOffset": 504, "endOffset": 669, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "solve",
+      "ranges": [
+        { "startOffset": 674, "endOffset": 946, "count": 3 },
+        { "startOffset": 717, "endOffset": 805, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getSolutionResult",
+      "ranges": [{ "startOffset": 951, "endOffset": 1118, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 1041, "endOffset": 1058, "count": 9 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "checkSolutionsValid",
+      "ranges": [
+        { "startOffset": 1123, "endOffset": 1386, "count": 3 },
+        { "startOffset": 1189, "endOffset": 1281, "count": 0 },
+        { "startOffset": 1323, "endOffset": 1380, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "findSolutions",
+      "ranges": [
+        { "startOffset": 1391, "endOffset": 2167, "count": 3 },
+        { "startOffset": 1443, "endOffset": 1477, "count": 43 },
+        { "startOffset": 1478, "endOffset": 1498, "count": 41 },
+        { "startOffset": 1500, "endOffset": 2161, "count": 40 },
+        { "startOffset": 1599, "endOffset": 1864, "count": 94 },
+        { "startOffset": 1715, "endOffset": 1722, "count": 25 },
+        { "startOffset": 1724, "endOffset": 1850, "count": 25 },
+        { "startOffset": 1891, "endOffset": 1940, "count": 15 },
+        { "startOffset": 1940, "endOffset": 2151, "count": 25 },
+        { "startOffset": 2011, "endOffset": 2137, "count": 3 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "saveToStack",
+      "ranges": [
+        { "startOffset": 2172, "endOffset": 2346, "count": 25 },
+        { "startOffset": 2279, "endOffset": 2340, "count": 15 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "backtrack",
+      "ranges": [
+        { "startOffset": 2351, "endOffset": 2671, "count": 18 },
+        { "startOffset": 2412, "endOffset": 2482, "count": 3 },
+        { "startOffset": 2482, "endOffset": 2665, "count": 15 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

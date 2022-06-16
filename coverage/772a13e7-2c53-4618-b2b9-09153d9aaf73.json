@@ -1,0 +1,26 @@
+{
+  "scriptId": "83",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/utils/PuzzleFileHelper.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 3619, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 74, "endOffset": 928, "count": 3 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "readPuzzleFromFile",
+      "ranges": [{ "startOffset": 144, "endOffset": 290, "count": 6 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "writePuzzleSolutionToFile",
+      "ranges": [{ "startOffset": 295, "endOffset": 926, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

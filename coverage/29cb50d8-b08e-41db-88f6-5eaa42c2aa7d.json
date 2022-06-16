@@ -1,0 +1,26 @@
+{
+  "scriptId": "81",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/puzzle-solver/Cell.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1113, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [{ "startOffset": 7, "endOffset": 254, "count": 233 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "get isEmpty",
+      "ranges": [{ "startOffset": 86, "endOffset": 132, "count": 1128 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "Cell",
+      "ranges": [{ "startOffset": 137, "endOffset": 252, "count": 233 }],
+      "isBlockCoverage": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "scriptId": "89",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/cell-solution-strategy/BacktrackingStrategy.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 2412, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "findApplicableCell",
+      "ranges": [
+        { "startOffset": 135, "endOffset": 258, "count": 39 },
+        { "startOffset": 240, "endOffset": 251, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "applyChanges",
+      "ranges": [
+        { "startOffset": 263, "endOffset": 519, "count": 39 },
+        { "startOffset": 342, "endOffset": 491, "count": 53 },
+        { "startOffset": 399, "endOffset": 481, "count": 24 },
+        { "startOffset": 491, "endOffset": 518, "count": 15 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

@@ -30,6 +30,9 @@ export class PuzzleSolver {
 
   setPuzzle(puzzle: Puzzle) {
     this.currentPuzzle = puzzle;
+    this.solutions = [];
+    this.recentlyChangedCells = [];
+    this.canBacktrack = true;
   }
 
   solve(): SolutionResult {

@@ -1,0 +1,70 @@
+{
+  "scriptId": "91",
+  "url": "file:///Users/dannyclyde/School/CS5700/sudoku-solver/cell-solution-strategy/TwinsStrategy.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 7895, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "findApplicableCell",
+      "ranges": [
+        { "startOffset": 128, "endOffset": 609, "count": 40 },
+        { "startOffset": 222, "endOffset": 577, "count": 32 },
+        { "startOffset": 323, "endOffset": 567, "count": 94 },
+        { "startOffset": 383, "endOffset": 553, "count": 61 },
+        { "startOffset": 446, "endOffset": 535, "count": 32 },
+        { "startOffset": 553, "endOffset": 567, "count": 62 },
+        { "startOffset": 567, "endOffset": 577, "count": 0 },
+        { "startOffset": 577, "endOffset": 608, "count": 8 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 283, "endOffset": 320, "count": 512 },
+        { "startOffset": 303, "endOffset": 320, "count": 480 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "applyChanges",
+      "ranges": [
+        { "startOffset": 614, "endOffset": 977, "count": 32 },
+        { "startOffset": 722, "endOffset": 949, "count": 1 },
+        { "startOffset": 778, "endOffset": 939, "count": 2 },
+        { "startOffset": 831, "endOffset": 925, "count": 1 },
+        { "startOffset": 939, "endOffset": 949, "count": 0 },
+        { "startOffset": 949, "endOffset": 976, "count": 31 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "findTwins",
+      "ranges": [
+        { "startOffset": 982, "endOffset": 1876, "count": 40 },
+        { "startOffset": 1052, "endOffset": 1844, "count": 313 },
+        { "startOffset": 1103, "endOffset": 1144, "count": 281 },
+        { "startOffset": 1144, "endOffset": 1216, "count": 32 },
+        { "startOffset": 1216, "endOffset": 1374, "count": 123 },
+        { "startOffset": 1298, "endOffset": 1360, "count": 32 },
+        { "startOffset": 1374, "endOffset": 1844, "count": 0 },
+        { "startOffset": 1844, "endOffset": 1875, "count": 8 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "setsMatch",
+      "ranges": [
+        { "startOffset": 1881, "endOffset": 2186, "count": 123 },
+        { "startOffset": 1942, "endOffset": 2129, "count": 32 },
+        { "startOffset": 1989, "endOffset": 2094, "count": 64 },
+        { "startOffset": 2027, "endOffset": 2080, "count": 0 },
+        { "startOffset": 2129, "endOffset": 2180, "count": 91 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}
