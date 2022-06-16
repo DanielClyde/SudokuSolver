@@ -1,2 +1,15 @@
+4x4 puzzle
+Valid symbols: A B C D 
+B	D	C	A	
+A	C	B	D	
+C	A	D	B	
+D	B	A	C	
 
-No solutions found
+Strategy: BacktrackingStrategy
+Time Elapsed: 0
+Used Count: 4
+
+Strategy: CrooksStrategy
+Time Elapsed: 0
+Used Count: 0
+

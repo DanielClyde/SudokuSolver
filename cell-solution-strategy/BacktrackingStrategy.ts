@@ -2,9 +2,10 @@ import { CellSolutionStrategy } from './CellSolutionStrategy.ts';
 import { Cell } from '../puzzle-solver/Cell.ts';
 import { Puzzle } from '../puzzle-solver/Puzzle.ts';
 
-export class GuessStrategy extends CellSolutionStrategy {
-  protected findApplicableCell(puzzle: Puzzle): Cell | undefined {
-    return puzzle.findEmptyCell();
+export class BacktrackingStrategy extends CellSolutionStrategy {
+  protected findApplicableCell(puzzle: Puzzle): { cell: Cell, otherParams?: any } | undefined {
+    const cell = puzzle.findEmptyCell();
+    return cell ? { cell } : undefined;
   }
 
   protected applyChanges(puzzle: Puzzle, cell: Cell): boolean {

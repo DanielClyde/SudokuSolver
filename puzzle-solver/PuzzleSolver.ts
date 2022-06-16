@@ -1,8 +1,9 @@
 import { CellSolutionStrategy } from '../cell-solution-strategy/CellSolutionStrategy.ts';
 import { Puzzle } from '../puzzle-solver/Puzzle.ts';
-import { GuessStrategy } from '../cell-solution-strategy/GuessStrategy.ts';
+import { BacktrackingStrategy } from '../cell-solution-strategy/BacktrackingStrategy.ts';
 import { Cell } from '../puzzle-solver/Cell.ts';
 import { CrooksStrategy } from '../cell-solution-strategy/CrooksStrategy.ts';
+import { TwinsStrategy } from '../cell-solution-strategy/TwinsStrategy.ts';
 
 export interface StrategyStats {
   totalMS: number;
@@ -18,7 +19,8 @@ export interface SolutionResult {
 
 export class PuzzleSolver {
   private cellSolutionStrategies: CellSolutionStrategy[] = [
-    new GuessStrategy(),
+    new TwinsStrategy(),
+    new BacktrackingStrategy(),
     new CrooksStrategy(),
   ];
   private solutions: Puzzle[] = [];

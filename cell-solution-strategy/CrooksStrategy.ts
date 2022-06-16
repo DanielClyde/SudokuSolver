@@ -3,14 +3,14 @@ import { Cell } from '../puzzle-solver/Cell.ts';
 import { Puzzle } from '../puzzle-solver/Puzzle.ts';
 
 export class CrooksStrategy extends CellSolutionStrategy {
-  protected findApplicableCell(puzzle: Puzzle): Cell | undefined {
+  protected findApplicableCell(puzzle: Puzzle): { cell: Cell, otherParams?: any } | undefined {
     let cell: Cell | undefined = undefined;
     let i = 1;
     while (!cell && i < puzzle.size) {
       cell = this.findCellWithPossibleValues(puzzle, i);
       i++;
     }
-    return cell;
+    return cell ? { cell } : undefined;
   }
 
   protected applyChanges(puzzle: Puzzle, cell: Cell): boolean {

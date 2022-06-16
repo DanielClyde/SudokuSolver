@@ -1,7 +1,6 @@
 import { Cell } from '../puzzle-solver/Cell.ts';
 import { Puzzle } from '../puzzle-solver/Puzzle.ts';
 import { StrategyStats } from '../puzzle-solver/PuzzleSolver.ts';
-
 export abstract class CellSolutionStrategy {
   get numUses() { return this._numUses; }
   get elapsedTime() { return this._elapsedTime; }
@@ -19,18 +18,18 @@ export abstract class CellSolutionStrategy {
 
   execute(puzzle: Puzzle): { changeMade: boolean, cell: Cell | undefined } {
     this.startTimer();
-    const cell = this.findApplicableCell(puzzle);
+    const res= this.findApplicableCell(puzzle);
     let changeMade = false;
-    if (cell) {
+    if (res) {
       this._numUses++;
-      changeMade = this.applyChanges(puzzle, cell);
+      changeMade = this.applyChanges(puzzle, res.cell, res.otherParams);
     }
     this.stopTimer();
-    return { changeMade, cell };
+    return { changeMade, cell: res?.cell };
   }
 
-  protected abstract findApplicableCell(puzzle: Puzzle): Cell | undefined;
-  protected abstract applyChanges(puzzle: Puzzle, cells: Cell): boolean;
+  protected abstract findApplicableCell(puzzle: Puzzle): { cell: Cell, otherParams?: any } | undefined;
+  protected abstract applyChanges(puzzle: Puzzle, cell: Cell, ...args: any[]): boolean;
 
   private startTimer() {
     this._startedTime = performance.now();
